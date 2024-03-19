@@ -1,1 +1,12 @@
-<p>country-view works!</p>
+<section class="container mt-3">
+    <div class="card p-3">
+        <div class="d-flex justify-content-between">
+            <h1> {{country.name.common}} </h1>
+            <img class="image" [src]="country.flags.svg" [alt]="country.name.common">
+        </div>
+        <hr>
+        <h3>Capital: {{country.capital}} </h3>
+        <p>Número de habitantes: {{country.population | number}} millones</p>
+        <a class="btn btn-danger" [routerLink]="['/mapa']">Volder</a>
+    </div>
+</section>
